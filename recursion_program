@@ -1,0 +1,26 @@
+#include<stdio.h>
+int sum(int arr[],int size ,int result)
+{
+    if(size==0)
+    return 0;
+    if(size==1)
+    return arr[0]+result;
+    else
+    return (arr+1,(arr[0]+result),size-1);
+}
+
+
+int main()
+{
+    int n,i ,a[20] ,size ,result;
+    printf("Enter the number");
+    scanf("%d",&size);
+    for( i=0;i<size;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+  int x= sum(a,size,result);
+    
+    printf("%d",x);
+    return 0;
+}
