@@ -1,0 +1,31 @@
+#include<stdio.h>
+int add(int a,int b)
+{
+    int c=a+b;
+    return c;
+}
+int sub(int a,int b)
+{
+  int c=a-b;
+    return c; 
+}
+int divide(int a,int b)
+{
+    int c=a/b;
+    return c;
+}
+int mul(int a,int b)
+{
+    int c=a*b;
+    return c;
+}
+int main()
+{
+    int n;
+    int (*fun_arr[])(int,int)={add,sub,divide,mul};
+    printf("enter the number=");
+    scanf("%d",&n);
+  printf("%d",fun_arr[n](3,4));
+    return 0;
+    
+}
