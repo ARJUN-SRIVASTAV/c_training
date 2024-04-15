@@ -1,0 +1,25 @@
+#include<stdio.h>
+struct point
+{
+    int x,y;
+    
+};
+struct rect
+{
+    struct point p1;
+    struct point p2;
+    
+};
+int main()
+{
+    struct rect r1;
+    int length,width;
+    r1.p1.x=2;
+     r1.p1.y=6;
+      r1.p2.x=4;
+      r1.p2.y=8;
+      length=r1.p2.y-r1.p1.y;
+      width=r1.p2.x-r1.p1.x;
+    printf(" %d",(length*width));
+    return 0;
+}
