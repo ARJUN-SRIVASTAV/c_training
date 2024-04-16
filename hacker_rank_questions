@@ -1,0 +1,59 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+struct Student
+{
+    char name[100];
+    int age;
+    int Total_marks;
+}s1,s2;
+
+
+int main() {
+//    struct Student s1,s2 ;
+int n;
+     scanf("%d",&n);
+     
+    if (n==2) {
+     
+    
+   scanf("%s",s1.name);
+   scanf("%d",&s1.age);
+   scanf("%d",&s1.Total_marks);
+   
+   
+   
+   scanf("%s",s2.name);
+   scanf("%d",&s2.age);
+   scanf("%d",&s2.Total_marks);
+   
+   
+   printf("Name: %s\n",s1.name);
+   printf("Age: %d\n",s1.age);
+   printf("Total Marks: %d\n\n",s1.Total_marks);
+   
+   printf("Name: %s\n",s2.name);
+   printf("Age: %d\n",s2.age);
+   printf("Total Marks: %d\n",s2.Total_marks);
+   
+    }
+    else {
+    scanf("%s",s1.name);
+   scanf("%d",&s1.age);
+   scanf("%d",&s1.Total_marks);
+   
+   printf("Name: %s\n",s1.name);
+   printf("Age: %d\n",s1.age);
+   printf("Total Marks: %d\n",s1.Total_marks);
+    }
+   
+  
+   
+   
+    
+    return 0;
+}
