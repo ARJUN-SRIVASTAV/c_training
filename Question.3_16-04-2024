@@ -1,0 +1,43 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+struct student
+{
+  
+    char name[20];
+    int Roll_No;
+    int marks[20];
+    float per;
+    
+}a[20];
+int main() {
+    int num;
+    float total;
+    scanf("%d",&num);
+    for (int i=0; i<num; i++) {
+    
+    scanf("%s",a[i].name);
+     scanf("%d",&a[i].Roll_No);
+    
+    for (int j=0; j<5; j++) {
+    scanf("%d",&a[i].marks[j]);
+    }
+    total=0;
+    
+   for (int j=0; j<5; j++) {
+   total=total+a[i].marks[j];
+   } 
+    a[i].per=total/5;
+    }
+    for (int i=0; i<num; i++) {
+   
+    printf("Name: %s\n",a[i].name);
+     printf("Roll No: %d\n",a[i].Roll_No);
+    printf("Percentage: %0.1f\n",a[i].per);
+    }
+    return 0;
+}
